@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>301 Moved Permanently</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .error-bar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .error-message {
+            background-color: #444;
+            color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+        .timer {
+            font-size: 16px;
+            color: #999;
+        }
+    </style>
+    <script>
+        addEventListener("DOMContentLoaded", function () {
+            var countdown = 11;
+
+var countdownElement = document.getElementById("countdown");
+
+function updateCountdown() {
+    console.log("tick")
+    countdown--;
+    countdownElement.textContent = countdown;
+
+    if (countdown === 0) {
+        window.location.href = window.location.origin;
+    } else {
+        setTimeout(updateCountdown, 1000);
+    }
+}
+
+setTimeout(updateCountdown, 1000);
+        })
+    </script>
+</head>
+<body>
+    <div class="error-bar">
+        <h1>301 Moved Permanently</h1>
+    </div>
+    <div class="error-message">
+        <h2>The requested resource has moved for the following reason:</h2>
+        <p>"@template" is a forbidden directory. It is reserved for development purposes only and should not be accessed. Accessing this directory may lead to unfinished or broken pages.</p>
+        <p>If you are the owner of this directory, try accessing it through your IDE or the hosting platform's page (e.g., GitHub) for proper management.</p>
+        <p>If you are testing this locally, you may need to enter the full path. For example, if the file is located at <code>~/website/@template/template_index.html</code>, you can try accessing it as <code>0.0.0.0:8000/@template/template_index.html</code>.</p>
+    </div>
+    <p class="timer">You will be automatically redirected to the new location in <span id="countdown">?</span> seconds. If the redirection doesn't occur, please click <u><a style="color: blue; cursor: pointer;" onclick="window.location.href = window.location.origin">here</a></u>.</p>
+</body>
+</html>

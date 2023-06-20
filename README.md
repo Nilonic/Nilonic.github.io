@@ -13,7 +13,7 @@ Here are some of my projects:
 1. **FNF+** - Development on hold<br>
    GitHub: [https://github.com/Nilonic/FNF-PLUS](https://github.com/Nilonic/FNF-PLUS)
 
-2. **FNF Midnight engine** - Not currently developed<br>
+2. **FNF Midnight engine** - Development canceled<br>
    GitHub: [https://github.com/Nilonic/fnf-midnight-engine](https://github.com/Nilonic/fnf-midnight-engine)
 
 3. **Inline OS** - Development on indefinite hold<br>
