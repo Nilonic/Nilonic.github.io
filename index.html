@@ -1,41 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
-  <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Nilon's Homepage</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="hamburger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section class="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><a href="#">Project 1</a></li>
-        <li><a href="#">Project 2</a></li>
-        <li><a href="#">Project 3</a></li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2023 Your Company</p>
-  </footer>
+    <header>
+        <div class="head-bar">
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+            <img src="icon.png" alt="Icon">
+        </div>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <ul>
+                <li onclick="NHref('')">Home</li>
+                <li onclick="NHref('about')">About</li>
+                <li onclick="NHref('services/whatsDown')">What services are down</li>
+                <li onclick="trollConsole()">Admin page</li> <!--get trolled-->
+            </ul>
+        </div>
+    </header>
+    
+    <div class="content">
+        <h1>Nilonic - Home</h1>
+        welcome to the mistake of this page, i spent a bit piecing the pieces of the last ""build"" together to make them work
+    </div>
+    
+    <footer>
+        <p>&copy; lololol</p>
+        <p>this website is a massive joke, don't take it seriously</p>
+    </footer>
 </body>
 </html>
