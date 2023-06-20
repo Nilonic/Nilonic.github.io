@@ -19,6 +19,9 @@ Here are some of my projects:
 3. **Inline OS** - Development on indefinite hold<br>
    GitHub: [https://github.com/Nilonic/inline-os](https://github.com/Nilonic/inline-os)
 
+4. **MTA Audio Player** - Development is moving slowly<br>
+   GitHub: [https://github.com/Nilonic/MTA-Audio-Player](https://github.com/Nilonic/MTA-Audio-Player)
+
 Feel free to check them out!
 
 ## Rickroll Detector
