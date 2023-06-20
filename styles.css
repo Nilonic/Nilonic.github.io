@@ -1,0 +1,88 @@
+/* Reset default styles */
+body, ul, li, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #1f1f1f; /* Dark background color */
+    color: #fff; /* Text color */
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    padding: 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .hamburger-menu span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #fff; /* Hamburger menu color */
+  }
+  
+  .menu {
+    display: none;
+    list-style-type: none;
+  }
+  
+  .menu li {
+    padding: 10px 0;
+  }
+  
+  .menu li a {
+    color: #fff; /* Menu link color */
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .projects {
+    margin-top: 50px;
+  }
+  
+  .projects h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .projects ul {
+    list-style-type: none;
+  }
+  
+  .projects li {
+    margin-bottom: 10px;
+  }
+  
+  .projects li a {
+    color: #fff; /* Project link color */
+    text-decoration: none;
+  }
+  
+  footer {
+    background-color: #000; /* Footer background color */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    color: #fff; /* Footer text color */
+  }
+  
