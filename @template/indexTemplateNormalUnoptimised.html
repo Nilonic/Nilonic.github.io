@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!--why bulk load? because if its not in CD, try the directory before, if its not in the directory before, ya fucked up-->
+    <link rel="stylesheet" type="text/css" href="../style.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="../script.js"></script>
     <script src="script.js"></script>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>A Fucking Template</title>
+    <title>A Fucking Template (load styles+js before body)</title>
 </head>
 <body>
     <header>
@@ -31,6 +35,8 @@
         modify this with content
         <br>
         probably easier than doing it manualy
+        <br>
+        this version loads everything before the body, so is better with newer browsers/fast connections
     </div>
     
     <footer>
