@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>A Fucking Template (load body before styles+js)</title>
+    <!--why bulk load? because if its not in CD, try the directory before, if its not in the directory before, ya fucked up-->
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="../scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>A Fucking Template (load styles+js before body)</title>
 </head>
 <body>
     <header>
@@ -29,19 +36,12 @@
         <br>
         probably easier than doing it manualy
         <br>
-        this version loads the body before the CSS and JS, so is better with older browsers/slow connections
+        this version loads everything before the body, so is better with newer browsers/fast connections
     </div>
     
     <footer>
         <p>&copy; lololol</p>
         <p>this website is a massive joke, don't take it seriously</p>
     </footer>
-    <!--why bulk load? because if its not in CD, try the directory before, if its not in the directory before, ya fucked up-->
-    <link rel="stylesheet" type="text/css" href="../style.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="../script.js"></script>
-    <script src="script.js"></script>
-    <link rel="icon" href="../favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </body>
 </html>

@@ -18,14 +18,87 @@
             <ul>
                 <li onclick="NHref(window.location.origin)">Home</li>
                 <li onclick="NHref(window.location.origin + '/about')">About</li>
-                <li onclick="NHref(window.location.origin +'services/whatsDown')">What services are down</li>
+                <li onclick="NHref(window.location.origin +'/services/whatsDown')">What services are down</li>
                 <li onclick="trollConsole()">Admin page</li> <!--get trolled-->
             </ul>
         </div>
     </header>
-    
+    <script src="scripts/isJSDisabled.js"></script>
+    <script>
+    try{
+        kek2 = check()
+    }catch(e){kek2 = true; console.error(`${e}`)}
+        if(kek2 == false){}
+        else{
+            var styleElement = document.createElement("style")
+            let style = `/* CSS for warning message */
+                .warning-container {
+                  background-color: #f8d7da;
+                  border: 1px solid #f5c6cb;
+                  color: #721c24;
+                  padding: 10px;
+                  margin-bottom: 20px;
+                }
+                
+                .warning-icon {
+                  display: inline-block;
+                  vertical-align: middle;
+                  margin-right: 10px;
+                  font-size: 20px;
+                }
+                
+                .warning-message {
+                  display: inline-block;
+                  vertical-align: middle;
+                }`
+                styleElement.appendChild(document.createTextNode(style))
+                document.head.appendChild(styleElement)
+                addEventListener("DOMContentLoaded", function () {
+                    let div = document.createElement('div')
+                    div.className = "warning-container"
+                    let icon = document.createElement('span')
+                    icon.className = "warning-icon"
+                    icon.innerHTML = "&#9888;"
+                    let text = document.createElement('span')
+                    text.className = "warning-message"
+                    text.innerHTML = "JS Files are disabled, however inline scripts work, please enable them..."
+                    div.appendChild(icon)
+                    div.appendChild(text)
+                    document.body.appendChild(div)
+                })
+        }</script>
+    <noscript>
+        <style>
+            /* CSS for warning message */
+            .warning-container {
+              background-color: #f8d7da;
+              border: 1px solid #f5c6cb;
+              color: #721c24;
+              padding: 10px;
+              margin-bottom: 20px;
+            }
+            
+            .warning-icon {
+              display: inline-block;
+              vertical-align: middle;
+              margin-right: 10px;
+              font-size: 20px;
+            }
+            
+            .warning-message {
+              display: inline-block;
+              vertical-align: middle;
+            }
+          </style>
+        <div class="warning-container">
+            <span class="warning-icon">&#9888;</span>
+            <span class="warning-message">Scripts are disabled in your browser, which means this site will not work correctly. Please enable JavaScript to enjoy full functionality.</span>
+          </div>
+          <br>
+    </noscript>
     <div class="content">
         <h1>Nilonic - Home</h1>
+
         welcome to the mistake of this page, i spent a bit piecing the pieces of the last ""build"" together to make them work
 <br>
         here you can find statuses for my projects and such
@@ -35,8 +108,8 @@
         <p>&copy; lololol</p>
         <p>this website is a massive joke, don't take it seriously</p>
     </footer>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="scripts/script.js"></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </body>
 </html>

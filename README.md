@@ -31,9 +31,7 @@ We have worked on several exciting projects. Here are some of them:
 
 Feel free to explore these projects and provide feedback or contribute if you find them interesting!
 
-## About "@template" and "@tests" folders
-
-Within the source code, you'll find two important folders: "@template" and "@tests." Let's dive into more details about them:
+## About "Development Only" folder
 
 - **@template**: This folder contains template files used in the development of the website. These templates serve as the foundation for creating various pages and components. They include reusable code snippets, layout structures, and placeholders that are dynamically filled with content during runtime. Developers use these templates to ensure consistency and efficiency in creating new pages and components.
 
@@ -43,9 +41,7 @@ Within the source code, you'll find two important folders: "@template" and "@tes
 
 The codebase of nilonic.github.io is built using modern web technologies and frameworks. It follows best practices to ensure maintainability, scalability, and performance. The website utilizes HTML, CSS, and JavaScript to create interactive and engaging user experiences.
 
-The structure of
-
- the codebase is organized into different directories and files, separating concerns and promoting modularity. It incorporates design patterns and architectural principles to facilitate code reusability and extensibility.
+The structure ofthe codebase is organized into different directories and files, separating concerns and promoting modularity. It incorporates design patterns and architectural principles to facilitate code reusability and extensibility.
 
 The development team has implemented version control using Git, with the source code hosted on GitHub. This allows for collaboration, issue tracking, and easy deployment to various environments.
 

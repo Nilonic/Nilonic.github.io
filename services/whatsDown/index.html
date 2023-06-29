@@ -2,13 +2,11 @@
 <html>
 <head>
     <!--why bulk load? because if its not in CD, try the directory before, if its not in the directory before, ya fucked up-->
-    <link rel="stylesheet" type="text/css" href="../style.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="../script.js"></script>
-    <script src="script.js"></script>
-    <link rel="icon" href="../favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>A Fucking Template (load styles+js before body)</title>
+    <link rel="stylesheet" type="text/css" href="../../styles/style.css">
+    <script src="../../scripts/script.js"></script>
+    <script src="downDetectorSetup.js"></script>
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <title>Down Detector Replacement</title>
 </head>
 <body>
     <header>
@@ -18,7 +16,7 @@
                 <div class="hamburger-line"></div>
                 <div class="hamburger-line"></div>
             </div>
-            <img src="icon.png" alt="Icon">
+            <img src="../../icon.png" alt="Icon">
         </div>
         <div class="dropdown-menu" id="dropdownMenu">
             <ul>
@@ -31,17 +29,17 @@
     </header>
     
     <div class="content">
-        <h1>Template Page</h1>
-        modify this with content
-        <br>
-        probably easier than doing it manualy
-        <br>
-        this version loads everything before the body, so is better with newer browsers/fast connections
+        <h1>NDown Detector</h1>
+        please enter a URL: <input></input> <button>Is it down?</button>
+        <div class="result">
+            awaiting URL...
+        </div>
     </div>
     
     <footer>
         <p>&copy; lololol</p>
         <p>this website is a massive joke, don't take it seriously</p>
     </footer>
+    <script src="downDetectorLoop.js"></script>
 </body>
 </html>
