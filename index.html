@@ -3,6 +3,22 @@
 <head>
     <!--panik-->
     <title>Nilon's Homepage</title>
+    <style>
+      body{
+        color: white;
+        background-color: white;
+      }
+      regret{
+        color:#000000
+      }
+      .head-bar img {
+        position:absolute;
+        cursor: default;
+        height: 0px;
+        top: 999999;
+        right: 999999;
+      }
+    </style>
 </head>
 <body>
     <header>
@@ -17,8 +33,7 @@
         <div class="dropdown-menu" id="dropdownMenu">
             <ul>
                 <li onclick="NHref(window.location.origin)">Home</li>
-                <li onclick="NHref(window.location.origin + '/about')">About</li>
-                <li onclick="NHref(window.location.origin +'/services/whatsDown')">What services are down</li>
+                <li onclick="NHref(window.location.origin + '/about')">About</li>    
                 <li onclick="trollConsole()">Admin page</li> <!--get trolled-->
             </ul>
         </div>
@@ -61,12 +76,14 @@
                     icon.innerHTML = "&#9888;"
                     let text = document.createElement('span')
                     text.className = "warning-message"
-                    text.innerHTML = "JS Files are disabled, however inline scripts work, please enable them..."
+                    text.innerHTML = "We apologize for the inconvenience, but currently, JS files are disabled. Although inline scripts are functioning, it's crucial to note that without enabling JS files, the website's full functionality will not be available. Therefore, we kindly request that you enable JS files to ensure the optimal performance and complete functionality of the website."
                     div.appendChild(icon)
                     div.appendChild(text)
-                    document.body.appendChild(div)
+                    const parent_Div = document.getElementById("sugma balls")
+                    parent_Div.appendChild(div)
                 })
         }</script>
+        <div id="sugma balls"></div>
     <noscript>
         <style>
             /* CSS for warning message */

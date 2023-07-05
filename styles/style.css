@@ -10,6 +10,13 @@ p {
     text-align: center;
 }
 
+regret {
+    position:fixed;
+    top:9999999999999999;
+    right:9999999999999999;
+    color:transparent;
+}
+
 .head-bar img {
     cursor: pointer;
     height: 30px;
