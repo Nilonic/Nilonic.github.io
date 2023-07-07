@@ -20,10 +20,10 @@
 }
 
 
-.head-icondesc{
-    position:fixed;
-    top: -12px;
-    left: 50px;
+.head-bar h1{
+    position: relative;
+    top: -60px;
+    left: 40px;
 }
 
 .dlbutton:hover{
