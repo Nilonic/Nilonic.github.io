@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nilons openPOS</title>
+</head>
+<body>
+    <header>
+        <div class="head-bar">
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+            <img src="icon.ico" alt="Icon">
+            <h1 class="head-icondesc">nilonic.github.io</h1>
+        </div>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <ul>
+                <li onclick="NHref(window.location.origin)">Home</li>
+                <li onclick="NHref(window.location.origin + '/about')">About</li>
+                <li onclick="NHref(window.location.origin + '/openPOS')">openPOS</li>
+
+                <li onclick="trollConsole()">Admin page</li> <!--get trolled-->
+            </ul>
+        </div>
+    </header>
+    
+    <div class="content">
+        <h1>openPOS</h1>
+        <p>
+            openPOS is a Point of Sale (POS) system that utilizes Electron and Node.js. It is designed to be optimized and built specifically for Debian and Red Hat-based x64 distributions.
+        </p>
+        <p>
+            The primary goal of openPOS is to provide a reliable and efficient solution for managing sales transactions and inventory in a retail environment. By leveraging the power of Electron and Node.js, openPOS offers a cross-platform application that can run on various operating systems while providing a consistent user experience.
+        </p>
+        <p>
+            The core functionality of openPOS, including the main application logic, user interface, and data management, has been developed entirely by the author.
+        </p>
+        <p>
+            The current version of openPOS is 0.0.0-beta. However, please note that it cannot be downloaded as a precompiled binary at this time.
+        </p>
+        <p>scroll down to see documentation, or just press one of the buttons below</p>
+        <br>
+        <button class="dlbutton" onclick="location.href = 'https://github.com/Nilonic/openPOS'">Go to the GitHub page</button>
+        <br>
+        <button class="dlbutton" disabled aria-disabled="false" onclick="location.href = 'https://github.com/Nilonic/openPOS/releases/latest'">View latest release</button>
+
+        <h2><strong><i><u>planned</u></i></strong> arguments:</h2>
+        
+        <h4><strong>--noKiosk / -nk / noKiosk:</strong></h4> disables forced full screen mode, note default size is 1920x1080
+        <h4><strong>--uoMode / -um / userOperatedMode:</strong></h4> forces kiosk mode and loading of the user-mode variables <strong>(NOT RECOMENDED)</strong>
+        <h4><strong>--whereAreTheBugs / --verbose / --debugging=on:</strong></h4> enables all terminal-based messages, recomended with --noKiosk
+        <br><br><br><br>
+</div>
+    
+    <footer>
+        <p>&copy; lololol</p>
+        <p>this website is a massive joke, don't take it seriously</p>
+    </footer>
+    <!--why bulk load? because if its not in CD, try the directory before, if its not in the directory before, ya fucked up-->
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css"> <!--custom button style!-->
+    <script src="../scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</body>
+</html>
