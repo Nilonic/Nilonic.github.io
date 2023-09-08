@@ -1,0 +1,27 @@
+/* snow.css */
+
+.snowflake {
+    position: absolute;
+    background-color: aliceblue;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    animation: fall 5s linear infinite;
+    left: calc(100vw * var(--start-x));
+    transform: translateX(calc(var(--direction) * 100vh)); /* Adjust translateX based on --direction */
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) translateX(calc(var(--direction) * 100vh)) rotate(360deg); /* Adjust translateX based on --direction */
+        opacity: 0;
+    }
+}
+
+.hidden {
+    display: none;
+}
