@@ -1,5 +1,9 @@
 // snow.js
 
+function snowJSWorking(){
+	return true;
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     const numSnowflakes = 100; // Set the number of snowflake elements you want
 
