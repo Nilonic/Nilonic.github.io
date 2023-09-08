@@ -27,9 +27,11 @@ document.addEventListener("DOMContentLoaded", function () {
         snowfallContainer.appendChild(snowflake);
     }
 
-    // Add event listener to toggle snow on button click
+    addEventListener('DOMContentLoaded', function() {
+	        // Add event listener to toggle snow on button click
     const toggleSnowButton = document.getElementById('toggleSnow');
     toggleSnowButton.addEventListener('click', function () {
         snowfallContainer.classList.toggle('hidden');
     });
+    })
 });
