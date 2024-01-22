@@ -1,133 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!--panik-->
-    <title>Nilon's Homepage</title>
-    <style>
-      body{
-        color: white;
-        background-color: white;
-      }
-      regret{
-        color:#000000
-      }
-      .head-bar img {
-        position:absolute;
-        cursor: default;
-        height: 0px;
-        top: 999999;
-        right: 999999;
-      }
-    </style>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Home</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
 </head>
 <body>
-    <header>
-        <div class="head-bar">
-            <div class="hamburger" onclick="toggleMenu()">
-                <div class="hamburger-line"></div>
-                <div class="hamburger-line"></div>
-                <div class="hamburger-line"></div>
-            </div>
-            <img src="icon.png" alt="Icon">
-        </div>
-        <div class="dropdown-menu" id="dropdownMenu">
-            <ul>
-                <li onclick="NHref(window.location.origin)">Home</li>
-                <li onclick="NHref(window.location.origin + '/about')">About</li>
-                <li onclick="NHref(window.location.origin + '/openPOS')">openPOS</li>
-                <li onclick="trollConsole()">Admin page</li> <!--get trolled-->
-            </ul>
-        </div>
-    </header>
-    <script src="scripts/isJSDisabled.js"></script>
-    <script>
-    try{
-        kek2 = check()
-    }catch(e){kek2 = true; console.error(`${e}`)}
-        if(kek2 == false){}
-        else{
-            var styleElement = document.createElement("style")
-            let style = `/* CSS for warning message */
-                .warning-container {
-                  background-color: #f8d7da;
-                  border: 1px solid #f5c6cb;
-                  color: #721c24;
-                  padding: 10px;
-                  margin-bottom: 20px;
-                }
-                
-                .warning-icon {
-                  display: inline-block;
-                  vertical-align: middle;
-                  margin-right: 10px;
-                  font-size: 20px;
-                }
-                
-                .warning-message {
-                  display: inline-block;
-                  vertical-align: middle;
-                }`
-                styleElement.appendChild(document.createTextNode(style))
-                document.head.appendChild(styleElement)
-                addEventListener("DOMContentLoaded", function () {
-                    let div = document.createElement('div')
-                    div.className = "warning-container"
-                    let icon = document.createElement('span')
-                    icon.className = "warning-icon"
-                    icon.innerHTML = "&#9888;"
-                    let text = document.createElement('span')
-                    text.className = "warning-message"
-                    text.innerHTML = "We apologize for the inconvenience, but currently, JS files are disabled. Although inline scripts are functioning, it's crucial to note that without enabling JS files, the website's full functionality will not be available. Therefore, we kindly request that you enable JS files to ensure the optimal performance and complete functionality of the website."
-                    div.appendChild(icon)
-                    div.appendChild(text)
-                    const parent_Div = document.getElementById("sugma balls")
-                    parent_Div.appendChild(div)
-                })
-        }</script>
-        <div id="sugma balls"></div>
-    <noscript>
-        <style>
-            /* CSS for warning message */
-            .warning-container {
-              background-color: #f8d7da;
-              border: 1px solid #f5c6cb;
-              color: #721c24;
-              padding: 10px;
-              margin-bottom: 20px;
-            }
-            
-            .warning-icon {
-              display: inline-block;
-              vertical-align: middle;
-              margin-right: 10px;
-              font-size: 20px;
-            }
-            
-            .warning-message {
-              display: inline-block;
-              vertical-align: middle;
-            }
-          </style>
-        <div class="warning-container">
-            <span class="warning-icon">&#9888;</span>
-            <span class="warning-message">Scripts are disabled in your browser, which means this site will not work correctly. Please enable JavaScript to enjoy full functionality.</span>
-          </div>
-          <br>
-    </noscript>
-    <div class="content">
-        <h1>Nilonic - Home</h1>
-
-        I forgot to update this but 
-<br>
-        here you can find statuses for my projects and such
-    </div>
-    
-    <footer>
-        <p>&copy; lololol</p>
-        <p>this website is a massive joke, don't take it seriously</p>
-    </footer>
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <script src="scripts/script.js"></script>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <h1>nilonic.github.io -> remastered</h1>
+    <section class="myGames">
+        <hr>my games:<br>
+        <section>
+            <p>Prison Guard Simulator:</p>
+            <iframe frameborder="0" src="https://itch.io/embed/2482507?linkback=true&amp;bg_color=abc&amp;fg_color=000&amp;link_color=666&amp;border_color=3d4e5f" width="552" height="167"><a href="https://nilonic.itch.io/pgs">Prison Guard Simulator by nilonic</a></iframe>
+            <hr>
+        </section>
+    </section>
 </body>
 </html>
