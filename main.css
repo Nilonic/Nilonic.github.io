@@ -1,9 +1,10 @@
 body {
-    background-color: #123;
-    color: #abc;
+    margin: 0;
+    overflow: hidden; /* Disable scrolling */
 }
 
-section.myGames{
-    background-color: #456;
-    color: #def;
+iframe.mcb, iframe#mcb {
+    width: 100%;
+    height: 100vh; /* Set the height to fill the entire viewport */
+    border: none;   /* Remove iframe border */
 }
